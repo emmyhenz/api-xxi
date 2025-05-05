@@ -1,0 +1,67 @@
+{
+  "name": "@nexoracle/api",
+  "version": "1.0.0",
+  "description": "Official JavaScript and TypeScript SDK for NexOracle Rest APIs.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./browser": {
+      "import": "./dist/browser/index.mjs",
+      "require": "./dist/browser/index.cjs",
+      "types": "./dist/browser/index.d.ts"
+    }
+  },
+  "browser": {
+    "./dist/index.cjs": "./dist/browser/index.cjs",
+    "./dist/index.mjs": "./dist/browser/index.mjs"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist .tsbuildinfo",
+    "release": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexoracle/api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexoracle/api/issues"
+  },
+  "homepage": "https://github.com/nexoracle/api",
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/nexoracle"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "nexoracle",
+    "api",
+    "javascript",
+    "typescript",
+    "rest-api",
+    "free-api",
+    "api-wrapper",
+    "nodejs",
+    "browser"
+  ],
+  "author": "NexOracle (Maher Zubair) - support@nexoracle.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
