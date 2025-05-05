@@ -1,7 +1,7 @@
 {
   "name": "@nexoracle/api",
   "version": "1.0.0",
-  "description": "Official JavaScript and TypeScript SDK for NexOracle Rest APIs.",
+  "description": "Official SDK Npm Library for NexOracle Rest APIs.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -53,7 +53,7 @@
     "browser"
   ],
   "author": "NexOracle (Maher Zubair) - support@nexoracle.com",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.13.10",
     "tsup": "^8.4.0",
