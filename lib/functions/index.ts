@@ -66,6 +66,7 @@ const fetchApi = {
         return data;
       }
     } catch (error: any) {
+      console.error("[NexOracle APIs Error]:", error);
       if (fetchResultOnly) {
         if (error.response?.data && error.response?.data?.result) {
           return error.response.data.result;
@@ -108,7 +109,7 @@ const fetchApi = {
         return arrayBuffer;
       }
     } catch (error: any) {
-      console.error("Error in NexOracle-APIs:\n", error);
+      console.error("[NexOracle APIs Error]:", error);
 
       if (error.response && error.response?.data) {
         try {

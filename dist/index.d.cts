@@ -90,6 +90,34 @@ declare const downloader: {
 
 declare const imageProcessing: {
     ad: (params?: Record<string, any>) => Promise<any>;
+    artify: (params?: Record<string, any>) => Promise<any>;
+    beautiful: (params?: Record<string, any>) => Promise<any>;
+    blur: (params?: Record<string, any>) => Promise<any>;
+    clown: (params?: Record<string, any>) => Promise<any>;
+    darkness: (params?: Record<string, any>) => Promise<any>;
+    dehaze: (params?: Record<string, any>) => Promise<any>;
+    drip: (params?: Record<string, any>) => Promise<any>;
+    enhance: (params?: Record<string, any>) => Promise<any>;
+    facePalm: (params?: Record<string, any>) => Promise<any>;
+    greyScale: (params?: Record<string, any>) => Promise<any>;
+    gunOverLay: (params?: Record<string, any>) => Promise<any>;
+    image2Gta: (params?: Record<string, any>) => Promise<any>;
+    image2Anime: (params?: Record<string, any>) => Promise<any>;
+    iphoneAlert: (params?: Record<string, any>) => Promise<any>;
+    invert: (params?: Record<string, any>) => Promise<any>;
+    jail: (params?: Record<string, any>) => Promise<any>;
+    mnm: (params?: Record<string, any>) => Promise<any>;
+    pet: (params?: Record<string, any>) => Promise<any>;
+    pixelate: (params?: Record<string, any>) => Promise<any>;
+    removeBG: (params?: Record<string, any>) => Promise<any>;
+    rip: (params?: Record<string, any>) => Promise<any>;
+    rainbow: (params?: Record<string, any>) => Promise<any>;
+    recolor: (params?: Record<string, any>) => Promise<any>;
+    resize: (params?: Record<string, any>) => Promise<any>;
+    trigger: (params?: Record<string, any>) => Promise<any>;
+    upscale: (params?: Record<string, any>) => Promise<any>;
+    wasted: (params?: Record<string, any>) => Promise<any>;
+    wanted: (params?: Record<string, any>) => Promise<any>;
 };
 
 export { apiParams, config, downloader, fetchApi, imageProcessing, islamic, setConfig };
