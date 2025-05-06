@@ -1,6 +1,6 @@
 {
   "name": "@nexoracle/api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official SDK Npm Library for NexOracle Rest APIs.",
   "type": "module",
   "main": "./dist/index.cjs",
