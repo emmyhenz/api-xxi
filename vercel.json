@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "dist/index.mjs": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/dist/index.mjs" }
+  ]
+}
